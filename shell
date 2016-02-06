@@ -1,0 +1,4 @@
+#!/bin/bash
+source helper
+
+docker run --net=host -e INTERFACE=em1 -v `pwd`:/docker -w /docker --rm -it ${IMAGE} /bin/bash
